@@ -197,11 +197,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -265,6 +265,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Movie\Index.cshtml" />
+    <Content Include="Views\Movie\Create.cshtml" />
+    <Content Include="Views\Movie\Details.cshtml" />
+    <Content Include="Views\Movie\Edit.cshtml" />
+    <Content Include="Views\Movie\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -281,6 +286,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MoveGames.Data\MoveGames.Data.csproj">
+      <Project>{1ffa1728-2c5f-4b78-bcf8-ab1dea8ed77e}</Project>
+      <Name>MoveGames.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieGames.Contracts\MovieGames.Contracts.csproj">
+      <Project>{cac4c4dd-995a-4ebe-89e7-60f700fb6b3d}</Project>
+      <Name>MovieGames.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieGames.Models\MovieGames.Models.csproj">
+      <Project>{d4956b64-186c-4cc7-8ce9-dd88d905f75d}</Project>
+      <Name>MovieGames.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieGames.Services\MovieGames.Services.csproj">
+      <Project>{9C68AF24-23A0-4FB0-9CDA-4FC6A03B0331}</Project>
+      <Name>MovieGames.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
