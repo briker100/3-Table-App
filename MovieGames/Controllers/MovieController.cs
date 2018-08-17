@@ -13,8 +13,10 @@ namespace MovieGames.Controllers
     [Authorize]
     public class MovieController : Controller
     {
+
+        
         // GET: Movie
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder)
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new MovieService(userId);
