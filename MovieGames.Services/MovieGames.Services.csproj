@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommentsService.cs" />
     <Compile Include="MovieServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +65,10 @@
     <ProjectReference Include="..\MoveGames.Data\MoveGames.Data.csproj">
       <Project>{1ffa1728-2c5f-4b78-bcf8-ab1dea8ed77e}</Project>
       <Name>MoveGames.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieGames.Contracts\MovieGames.Contracts.csproj">
+      <Project>{cac4c4dd-995a-4ebe-89e7-60f700fb6b3d}</Project>
+      <Name>MovieGames.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\MovieGames.Models\MovieGames.Models.csproj">
       <Project>{d4956b64-186c-4cc7-8ce9-dd88d905f75d}</Project>

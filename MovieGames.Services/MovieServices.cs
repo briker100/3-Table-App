@@ -1,5 +1,6 @@
 ﻿using ElevenNote.Models;
 using MoveGames.Data;
+using MovieGames.Contracts;
 using MovieGames.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MovieGames.Services
 {
-    public class MovieService
+    public class MovieService : IMovieService
     {
         private readonly Guid _userId;
 
@@ -112,4 +113,4 @@ namespace MovieGames.Services
             }
         }
     }
-    }
+}
