@@ -54,22 +54,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comment.cs" />
-    <Compile Include="Migrations\201808201532341_Comment.cs" />
-    <Compile Include="Migrations\201808201532341_Comment.Designer.cs">
-      <DependentUpon>201808201532341_Comment.cs</DependentUpon>
+    <Compile Include="Migrations\201808211712013_InitialCreate.cs" />
+    <Compile Include="Migrations\201808211712013_InitialCreate.Designer.cs">
+      <DependentUpon>201808211712013_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808221443084_Theater.cs" />
+    <Compile Include="Migrations\201808221443084_Theater.Designer.cs">
+      <DependentUpon>201808221443084_Theater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808221946488_Comment.cs" />
+    <Compile Include="Migrations\201808221946488_Comment.Designer.cs">
+      <DependentUpon>201808221946488_Comment.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Movie.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theater.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808201532341_Comment.resx">
-      <DependentUpon>201808201532341_Comment.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808211712013_InitialCreate.resx">
+      <DependentUpon>201808211712013_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808221443084_Theater.resx">
+      <DependentUpon>201808221443084_Theater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808221946488_Comment.resx">
+      <DependentUpon>201808221946488_Comment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

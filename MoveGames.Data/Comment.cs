@@ -12,10 +12,20 @@ namespace MoveGames.Data
         [Display(Name = "Note was Created")]
         [Key]
         public int CommentId { get; set; }
-        [Required]
-        public string Comments { get; set; }
-        [Required]
-        public DateTimeOffset CreatedUtc { get; set; }
 
+        [Required]
+        public int MovieId { get; set; }
+
+        [Required]
+        public Guid UserId { get; set; }
+
+        [Required]
+        public string UserName { get; set; }
+
+        [Required]
+        public string CommentText { get; set; }
+
+        [Required]
+        public DateTimeOffset CreatedDate { get; set; }
     }
 }

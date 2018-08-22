@@ -10,6 +10,7 @@ namespace MoveGames.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "MovieGames.Models.ApplicationDbContext";
         }
 
         protected override void Seed(MovieGames.Models.ApplicationDbContext context)

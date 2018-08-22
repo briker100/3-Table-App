@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 
 namespace MovieGames.Models
 {
-    public class CommentListItem
+    public class CommentCreate
     {
-        public int CommentId { get; set; }
+        [Required]
         public Guid UserId { get; set; }
-        public string UserName { get; set; }
+
+        [Required]
+        public int MovieId { get; set; }
+
+        [Required]
         public string CommentText { get; set; }
-        public DateTimeOffset CreatedDate { get; set; }
     }
 }

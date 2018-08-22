@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<MovieGames.Models.CommentListItem>
 
 @{
-    ViewBag.Title = "Comments";
+    ViewBag.Title = "Index";
 }
 
-<h2>Comments</h2>
+<h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -15,10 +15,16 @@
             @Html.DisplayNameFor(model => model.CommentId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Comments)
+            @Html.DisplayNameFor(model => model.UserId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CreatedUtc)
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommentText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
         </th>
         <th></th>
     </tr>
@@ -29,15 +35,21 @@
             @Html.DisplayFor(modelItem => item.CommentId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Comments)
+            @Html.DisplayFor(modelItem => item.UserId)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CreatedUtc)
+            @Html.DisplayFor(modelItem => item.UserName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.CommentId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.CommentId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.CommentId })
+            @Html.DisplayFor(modelItem => item.CommentText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
         </td>
     </tr>
 }

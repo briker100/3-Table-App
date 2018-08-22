@@ -7,13 +7,13 @@ namespace MoveGames.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class Comment : IMigrationMetadata
+    public sealed partial class Theater : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Comment));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Theater));
         
         string IMigrationMetadata.Id
         {
-            get { return "201808201532341_Comment"; }
+            get { return "201808221443084_Theater"; }
         }
         
         string IMigrationMetadata.Source

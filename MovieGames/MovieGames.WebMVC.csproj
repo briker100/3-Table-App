@@ -199,6 +199,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
+    <Compile Include="Controllers\TheaterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -271,6 +272,12 @@
     <Content Include="Views\Movie\Details.cshtml" />
     <Content Include="Views\Movie\Edit.cshtml" />
     <Content Include="Views\Movie\Delete.cshtml" />
+    <Content Include="Views\Comment\Create.cshtml" />
+    <Content Include="Views\Theater\Index.cshtml" />
+    <Content Include="Views\Theater\Create.cshtml" />
+    <Content Include="Views\Theater\Details.cshtml" />
+    <Content Include="Views\Theater\Edit.cshtml" />
+    <Content Include="Views\Theater\Delete.cshtml" />
     <Content Include="Views\Comment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

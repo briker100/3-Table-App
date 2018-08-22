@@ -32,6 +32,8 @@ namespace MovieGames.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Theater> Theater { get; set; }
         public DbSet<Movie> Movies { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
