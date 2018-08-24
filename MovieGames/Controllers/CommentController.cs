@@ -21,14 +21,14 @@ namespace MovieGames.Controllers
         }
 
         [Authorize]
-        public ActionResult Create(int id)
+        public ActionResult Create()
         {
-            var model = new CommentCreate
-            {
-                MovieId = id,
-                UserId = Guid.Parse(User.Identity.GetUserId())
-            };
-            return View(model);
+            //var model = new CommentCreate
+            //{
+            //    MovieId = id,
+            //    UserId = Guid.Parse(User.Identity.GetUserId())
+            //};
+            return View();
         }
 
         [HttpPost]
