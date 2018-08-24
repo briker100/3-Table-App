@@ -18,6 +18,8 @@ namespace MoveGames.Data
         public string TheaterName { get; set; }
         [Required]
         public string TheaterLocation { get; set; }
+
+        //TODO: Eliminate code below -- extra fluff
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
 
