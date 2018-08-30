@@ -296,24 +296,6 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MoveGames.Data\MoveGames.Data.csproj">
-      <Project>{1ffa1728-2c5f-4b78-bcf8-ab1dea8ed77e}</Project>
-      <Name>MoveGames.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MovieGames.Contracts\MovieGames.Contracts.csproj">
-      <Project>{cac4c4dd-995a-4ebe-89e7-60f700fb6b3d}</Project>
-      <Name>MovieGames.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MovieGames.Models\MovieGames.Models.csproj">
-      <Project>{d4956b64-186c-4cc7-8ce9-dd88d905f75d}</Project>
-      <Name>MovieGames.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MovieGames.Services\MovieGames.Services.csproj">
-      <Project>{9C68AF24-23A0-4FB0-9CDA-4FC6A03B0331}</Project>
-      <Name>MovieGames.Services</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
